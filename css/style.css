@@ -4,10 +4,11 @@
 }
 
 .navbar{
-    box-shadow: 2px 2px 5px rgba(7, 105, 161, 0.829);
-    opacity: 0.9;
-    background-color: rgba(156, 123, 123, 0.699) ;
+    box-shadow: 2px 2px 5px rgba(37, 125, 177, 0.829);
+    text-decoration: black;
+    background-color: rgba(218, 204, 204, 0.699) ;
 }
+
 body{
     margin-top: 105px;
 }
@@ -48,6 +49,28 @@ body{
 }
 #main-footer ul{
     list-style-type: none;
+}
+#github {
+    background: url("../img/mountains.jpg") no-repeat center;
+    background-size: cover;
+    min-height: 600px;
+    position: relative;
+
+}
+#register{
+    background: url("../img/mountains.jpg") no-repeat center;
+    background-size: cover;
+    min-height: 600px;
+    position: relative;
+}
+#login{
+    background-color: rgb(29, 26, 26);
+}
+#log{
+    background: url("../img/mountains.jpg") no-repeat center; 
+  background-size: cover;
+  height: 500px;
+  position: relative;
 }
 /* .navbar .nav-item .nav-link{
     color: rgb(4, 96, 119);

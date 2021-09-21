@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Login</title>
+</head>
+<body >
+    <nav class="navbar pb-4 navbar-light navbar-expand-md fixed-top">
+        <div class="container ">
+            <a href="index.html" class="navbar-brand">
+               <img src="img/comp1.jpg" alt="" width="50" height="50"> 
+               <h3 class="d-inline align-middle">Pearl Jebs</h3>
+            </a>
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarnav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div id="navbarnav" class="collapse navbar-collapse ">
+                <ul class="navbar-nav ">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#authors">Teams</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">
+                            <span><i class="fa fa-sign-in"></i></span> Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="register.html">
+                         <span><i class="fa fa-user"></i></span> Register</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <br>
+    <section id="log">
+        <div class="container ">
+            <div class="row">
+                <div id="login" class="card col-md-6 align-item-center justify-content-center mx-auto ">
+                    <div class="card-body  ">
+     
+                        <button  data-toggle="modal" data-target="#myModal1" class="btn btn-block bg-primary text-white mb-3"> <i class="fa fa-facebook"></i> Sign-in with facebook</button>
+                        <!--The modal for sign in with facebook-->
+                        <div class="modal fade" id="myModal1">
+                            <div class="modal-dialog modal-lg">
+                                <div class="modal-content">
+                                     <!--myModal1 Header-->
+                                     
+                                    <div class="modal-header">
+                                        <div class="align-item-center justify-content-center mx-auto">
+                                            <h4 class=" font-weight-bolder display-4  modal-tittle text-primary text-center"> <i class="fa fa-facebook"></i>acebook</h4>
+                                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                                <div>
+                                                 <p class="lead text-dark  text-monospace">Facebook helps you connect with pearl faster</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                
+                                    <div class="modal-body">
+                                        <div class=" card col-md-6 align-item-center justify-content-center mx-auto">
+                                            <div class="card-body">
+                                                <div id="fbalertid" class=" text-dark alert d-none alert-success col-md-8  mx-auto">>
+                                                    A simple success alert
+                                                </div>
+                                                <div class="form-group">
+                                                    <input type="text" id="userfa" class="form-control" placeholder="Email address or username">
+                                                </div>
+                                                <div class="form-group">
+                                                    <input type="password" id="passfa" class="form-control" placeholder="Password">
+                                                </div>
+                                                <div>
+                                                    <button id="fbbtnlogin" class="btn btn-primary btn-block text-white ">Login</button>
+                                                </div>
+                                                <div class="form-group">
+                                                    <a class="align-item-center justify-content-center text-center" href="https://www.facebook.com/recover/initiate/?ars=facebook_login&privacy_mutation_token=eyJ0eXBlIjowLCJjcmVhdGlvbl90aW1lIjoxNjMwNjA3MzkzLCJjYWxsc2l0ZV9pZCI6MzgxMjI5MDc5NTc1OTQ2fQ%3D%3D">forgotten password?</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="modal-footer">
+                                        <a href="https://www.facebook.com/"> <button class=" font-weight-bold btn btn-block bg-success text-white">Create account</button>  </a>
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal"> Close </button>
+                                    </div>
+                                </div>
+                               
+                            </div>
+                        </div>
+                        <button data-toggle="modal" data-target="#myModal2" class="btn btn-block bg-danger text-white mb-3"> <i class="fa fa-envelope-open"></i> Sign-in with Gmail</button>
+                        <!--The modal for sign in with Github-->
+                        <div class="modal fade" id="myModal2">
+                            <div class="modal-dialog modal-lg">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <div class="col-md-6 align-item-center justify-content-center  mx-auto ">
+                                            <h4 class=" display-4 text-center"> <span class="text-primary">G</span><span class="text-danger">O</span><span class="text-warning">O</span><span class="text-primary">G</span><span class="text-success">L</span><span class="text-danger">E</span></h4>
+                                            <h5 class="font-weight-bold text-center">Sign in</h5>
+                                            <div>
+                                                <p>Use your Google Account to sign-in</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="card col-md-6 align-item-center justify-content-center mx-auto">
+                                            <div class="card-body">
+                                                <div class="form-group">
+                                                    <input type="text" class="form-control" placeholder="Email or phone">
+                                                </div>
+                                                <div class="form-group">
+                                                    <input type="password" class="form-control" placeholder="Password">
+                                                </div>
+                                                <div class="form-group">
+                                                    <a href="#">Forgot email or Password?</a>
+                                                </div>
+                                                <div class="form-group">
+                                                    <button type="button" class="btn btn-block bg-primary">Login</button>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                            <a class="d-flex justify-content-start" href="https://accounts.google.com/signup/v2/webcreateaccount?service=accountsettings&continue=https%3A%2F%2Fmyaccount.google.com%2F%3Futm_source%3Dsign_in_no_continue&dsh=S1544057415%3A1630608647629701&biz=false&flowName=GlifWebSignIn&flowEntry=SignUp"> <button class=" font-weight-bold btn btn-block bg-success text-white">Create account</button> </a>
+                                            <button type="button" class="btn btn-secondary d-flex justify-content-start" data-dismiss="modal"> Close </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <a href="github.html" target="_blank"><button class="btn btn-block bg-dark  text-white mb-3"> <i class="fa fa-github"></i> Sign-in with Github</button>  </a>
+
+                        <button type="button" data-toggle="modal" data-target="#myModal4" class="btn btn-block bg-success text-white mb-3"> <i class="fa fa-user-circle"></i> Sign-in with pearl ID</button>
+                        <!--modal for Pearl jebs login-->
+                        <div class="modal fade" id="myModal4">
+                            <div class="modal-dialog modal-lg">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <div class="col-md-8 align-item-center justify-content-center  mx-auto ">
+                                                <div class="align-item-center justify-content-center text-center mx-auto ">
+                                                <img src="img/comp1.jpg" alt="" width="70" height="70" > 
+                                                <h3 class="d-inline ">Pearl Jebs</h3>
+                                                </div>
+                                            
+                                        </div>
+                                    </div>
+                                    <div class="modal-body">
+                                            <div class=" card bg-light col-md-6 align-item-center justify-content-center mx-auto">
+                                                <div class="bg-light  rounder-lg p-0 ">
+                                                        <p class=" card-title lead text-center display-4"> <i class="fa fa-user"></i> Sign in</p>
+                                                        <div class="card-body form form-group">
+                                                            <label for=""> Username or email address</label>
+                                                            <input type="text" class="form-control">
+                                                        </div>
+                                                        <div class="card-body form form-group ">
+                                                            <span class=" d-flex justify-content-between">
+                                                                <label class="" for="">Password  </label>
+                                                                <span class=""> <a  class="card-link d-inline " href="">forget Password?</a> </span>
+                                                            </span>
+                                                            
+                                                            <input type="text" class="form-control">
+                                                        </div>
+                                                        <div class="card-body">
+                                                            <button class="btn btn-success btn-block">Sign in</button>
+                                                        </div>
+                                                </div>
+                                               
+                                            </div>    
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal"> Close </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container  mt-5">
+                <div class=" card bg-dark  col-md-6 mb-4 align-item-center justify-content-center mx-auto ">
+                    <div class=" rounded-lg ">
+                        <p class="px-3  bg-dark text-white text-center">New to Pearl Jebs? <a href="register.html" target="_blank">Create an account.</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+   
+   
+    <footer id="main-footer" class="  py-5 bg-dark text-white">
+        <div class="container">
+            <div class="row ">
+                <div class="col-md-6 ">
+                    <p> <i class="fa fa-copyright"></i> 2021 </p>
+                </div>
+                <div class="col-md-6">
+                   <div class="d-flex justify-content-end justify-content-sm-start justify-content-md-end">
+                    <div class="mx-3">
+                        <a class="text-white" href="#">
+                            <i class="fa fa-twitter fa-2x"></i>
+                        </a>
+                    </div>
+                    <div class="mx-3">
+                        <a class="text-white" href="#">
+                            <i class="fa fa-instagram fa-2x"></i>
+                        </a>
+                    </div>
+                    <div class="mx-3">
+                        <a class="text-white" href="#">
+                            <i class="fa fa-facebook fa-2x"></i>
+                        </a>
+                    </div>
+                    <div class="mx-3">
+                        <a class="text-white" href="#">
+                            <i class="fa fa-github fa-2x"></i>
+                        </a>
+                    </div>
+                   </div>
+                </div>
+            </div>
+        </div>
+    </footer >
+
+
+
+
+   <script src="js/jquery-3.4.1.js"></script> 
+   <script src="js/bootstrap.bundle.min.js"></script>
+   <script src="js/login.js"></script>
+</body>
+</html>
